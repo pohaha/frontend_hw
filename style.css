@@ -1,10 +1,13 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	background-color:coral;
+	background-color: #818666;
 }
 
-.menu {
+.side_bar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
     overflow: hidden;
     background-color: #333;
     position: fixed; 
@@ -13,7 +16,7 @@ html, body {
 	height: 100%;
     z-index: 2;
 }
-.menu a {
+.side_bar .menu_point {
 	float: left;
 	display: block;
 	color: #f2f2f2;
@@ -21,7 +24,7 @@ html, body {
 	padding: 14px 16px;
 	text-decoration: none;
 }
-.menu a:hover {
+.side_bar a:hover {
 	background: #ddd;
 	color: black;
 }
@@ -35,9 +38,8 @@ html, body {
 
 .menu_cutoff {
 	text-align: center;
-	/* font-family: 'Times New Roman'; */
 	font-size: 4vh;
-	color:salmon;
+	color:#BFC3AA;
     margin: 0;
 	padding-left: 16px;
     font-weight: bold;
@@ -47,21 +49,13 @@ html, body {
 }
 .slider {
     
-    /* ��������� �������� ��������������� ������������ ��� �������� �������: */
-    /* position: relative; */
 	display: flex;
 	margin: auto;
-	/* padding: 0 0 30px 0; */
-    /* width: 100%; */
-    /* max-width: 600px; */
     height: 85%;
 	width: 600px;
 	justify-content: space-between;
 	align-items: center;
-    /* z-index: 1; */
-    /* padding: 16px; */
 }
-    /* ��������������� */
 
 .slider .item {
 	object-fit:scale-down;
@@ -70,11 +64,7 @@ html, body {
 	height: 85vh;
 	width: 600px;
 }
-/* .slider .item img {
 
-} */
-
-/* ������� ����� � ����� */
 .slider .previous, .slider .next {
 	cursor: pointer;
 	color: white;
@@ -108,10 +98,10 @@ html, body {
     width: 170px;
 }
 
-    .button:hover {
-        background: black;
-        color: #ddd;
-    }
+.button:hover {
+	background: black;
+	color: #ddd;
+}
 
 
 

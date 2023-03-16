@@ -7,13 +7,47 @@
     <script src="script.js"></script>
 </head>
 <body>
-	<div class = "menu">
-		<a href="#photo">Примеры работ</a>
-		<a href="#about">Обо мне</a>
-		<a href="#otherOn">Оставить заявку</a>
-		<a href="#contacts">Контакты</a>
+	<div class = "side_bar">
+		<div>
+			<a class = "menu_point" href="#about">Основная информация</a>
+			<a class = "menu_point" href="#photo">Примеры работ</a>
+			<a class = "menu_point" href="#otherOn">Оставить заявку</a>
+		</div>
+		<div style="text-align: left; padding-left: 10px; padding-right: 10px;">
+			<hr>
+			<p style="color: white;">Контакты:</p>
+			<div style="display: grid; grid-template-columns: 5vmin 1fr; grid-template-rows: 5vmin 5vmin; height: 10vh;">
+				<div style="display: block; height: 100%; width: 100%; display: flex;justify-content: center; align-items: center; grid-row: 1; grid-column: 1;">
+					<img src="img/vk_logo.png" alt="" style="object-fit: scale-down; height: 75%; width: 75%; object-position: center">
+				</div>
+				<div style="display: block; height: 100%; width: 100%; display: flex;justify-content: center; align-items: center; grid-row: 2; grid-column: 1;">
+					<img src="img/email-svgrepo-com.svg" alt="" style="object-fit: scale-down; height: 75%; width: 75%; object-position: center">
+				</div>
+				<p style="color: white; grid-row: 1; grid-column: 2; display: flex; align-items: center; margin: 0;"><a href="http://vk.com/id23735363" style="color: white; font-size: auto; display: block;">vk.com/id23735363 </p>
+				<p style="color: white; grid-row: 2; grid-column: 2; display: flex; align-items: center; margin: 0;"><a href="mailto: hrundeluk@mail.ru" style="color: white; font-size: auto; display: block; width: 100%">hrundeluk@mail.ru</a></p>
+			</div>
+		</div>
 	</div>
 	<div class="content">
+		<div class="content_element" id="about">
+			<p class="menu_cutoff">О художнике</p>
+			<!-- <div style="display: grid; grid-template-columns: 40vw 1fr"> -->
+				<div style="display: block; float: left; height: auto; width: 40%; padding: 0 20px 20px 20px;">
+					<img src="img/owner.jpg" alt="" style="object-fit: scale-down; width: 100%; object-position: top left;">
+				</div>
+				<p style="font-size: 4vmin; text-align: center; margin: 10px; font-weight: bold;">ХУДОЖНИК-ИЛЛЮСТРАТОР	</p>
+				<p style="font-size: 4vmin; text-align: center; margin: 10px; font-weight: bold;">ГАЛЯ ЗИНЬКО</p>
+				<p style="font-size: 3vmin; margin: 2%;">
+					
+					Галина Зинько - обладательница престижных книжных премий и наград, одна из самых востребованных художников-иллюстраторов. Она известна и любима во всем мире.<br><br>
+					
+					Галина Зинько родилась 1 октября 1986 г. в Кишиневе. Высшее образование получила в ХГАДИИ (Харьковской государственной академии дизайна и искусств) на факультете станковой графики по специальности «оформление книги».<br><br>
+					
+					Профессиональная карьера иллюстратора началась с оформления сказки Сергея Аксакова «Аленький цветочек», полюбившейся украинским и российским читателям. Галя Зинько оформила более 30 классических и современных сказок, среди которых «Щелкунчик», «Снежная Королева», «Дюймовочка», «Спящая красавица», «Аленький Цветочек», «Золушка», «Алиса в стране Чудес», «Красная Шапочка» и многие другие.<br>
+				</p>
+			<!-- </div> -->
+
+		</div>
 		<div class="content_element" id="photo">
 			<p class="menu_cutoff">Примеры работ</p>
 			<div class="slider">
@@ -28,29 +62,9 @@
 			</div>
 			<script>currentSlide(1);</script>
 		</div>
-		<div class="content_element" id="about">
-			<p class="menu_cutoff">О художнике</p>
-			<!-- <div style="display: grid; grid-template-columns: 40vw 1fr"> -->
-				<div style="display: block; float: left; height: auto; width: 40%; padding: 0 20px 20px 20px;">
-					<img src="img/owner.jpg" alt="" style="object-fit: scale-down; width: 100%; object-position: top left;">
-				</div>
-					<p style="font-size: 3vmin">
-					ХУДОЖНИК-ИЛЛЮСТРАТОР<br>
-					ГАЛЯ ЗИНЬКО<br>
-					Галина Зинько - обладательница престижных книжных премий и наград, одна из самых востребованных художников-иллюстраторов. Она известна и любима во всем мире.<br><br>
-					
-					Галина Зинько родилась 1 октября 1986 г. в Кишиневе. Высшее образование получила в ХГАДИИ (Харьковской государственной академии дизайна и искусств) на факультете станковой графики по специальности «оформление книги».<br><br>
-					
-					Профессиональная карьера иллюстратора началась с оформления сказки Сергея Аксакова «Аленький цветочек», полюбившейся украинским и российским читателям. Галя Зинько оформила более 30 классических и современных сказок, среди которых «Щелкунчик», «Снежная Королева», «Дюймовочка», «Спящая красавица», «Аленький Цветочек», «Золушка», «Алиса в стране Чудес», «Красная Шапочка» и многие другие.<br>
-				</p>
-			<!-- </div> -->
-
-		</div>
+		
 		<div class="content_element" id="otherOn">
 			<p class="menu_cutoff">Оставьте свой заказ</p>
-		</div>
-		<div class="content_element" id="contacts">
-			<p class="menu_cutoff">Контакты</p>
 		</div>
 	</div>
 </body>
