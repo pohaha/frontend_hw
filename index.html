@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>my page</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+	<div class = "menu">
+		<a href="#photo">Примеры работ</a>
+		<a href="#about">Обо мне</a>
+		<a href="#otherOn">Оставить заявку</a>
+		<a href="#contacts">Контакты</a>
+	</div>
+	<div class="content">
+		<div class="content_element" id="photo">
+			<p class="menu_cutoff">Примеры работ</p>
+			<div class="slider">
+					<img class="item" src="img/image_1.jpg">
+					<img class="item" src="img/image_2.jpg">
+					<img class="item" src="img/image_6.jpg">
+					<img class="item" src="img/image_7.jpg">
+					<img class="item" src="img/image_8.jpg">
+					<img class="item" src="img/image_9.jpg">
+					<a class="previous" onclick="previousSlide()">&#10094;</a>
+					<a class="next" onclick="nextSlide()">&#10095;</a>
+			</div>
+			<script>currentSlide(1);</script>
+		</div>
+		<div class="content_element" id="about">
+			<p class="menu_cutoff">О художнике</p>
+			<!-- <div style="display: grid; grid-template-columns: 40vw 1fr"> -->
+				<div style="display: block; float: left; height: auto; width: 40%; padding: 0 20px 20px 20px;">
+					<img src="img/owner.jpg" alt="" style="object-fit: scale-down; width: 100%; object-position: top left;">
+				</div>
+					<p style="font-size: 3vmin">
+					ХУДОЖНИК-ИЛЛЮСТРАТОР<br>
+					ГАЛЯ ЗИНЬКО<br>
+					Галина Зинько - обладательница престижных книжных премий и наград, одна из самых востребованных художников-иллюстраторов. Она известна и любима во всем мире.<br><br>
+					
+					Галина Зинько родилась 1 октября 1986 г. в Кишиневе. Высшее образование получила в ХГАДИИ (Харьковской государственной академии дизайна и искусств) на факультете станковой графики по специальности «оформление книги».<br><br>
+					
+					Профессиональная карьера иллюстратора началась с оформления сказки Сергея Аксакова «Аленький цветочек», полюбившейся украинским и российским читателям. Галя Зинько оформила более 30 классических и современных сказок, среди которых «Щелкунчик», «Снежная Королева», «Дюймовочка», «Спящая красавица», «Аленький Цветочек», «Золушка», «Алиса в стране Чудес», «Красная Шапочка» и многие другие.<br>
+				</p>
+			<!-- </div> -->
+
+		</div>
+		<div class="content_element" id="otherOn">
+			<p class="menu_cutoff">Оставьте свой заказ</p>
+		</div>
+		<div class="content_element" id="contacts">
+			<p class="menu_cutoff">Контакты</p>
+		</div>
+	</div>
+</body>
+</html>
