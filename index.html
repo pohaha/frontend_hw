@@ -18,10 +18,10 @@
 			<p style="color: white;">Контакты:</p>
 			<div style="display: grid; grid-template-columns: 5vmin 1fr; grid-template-rows: 5vmin 5vmin; height: 10vh;">
 				<div style="display: block; height: 100%; width: 100%; display: flex;justify-content: center; align-items: center; grid-row: 1; grid-column: 1;">
-					<img src="img/vk_logo.png" alt="" style="object-fit: scale-down; height: 75%; width: 75%; object-position: center">
+					<img src="img/vk_logo.svg" alt="" style="object-fit: scale-down; height: 75%; width: 75%; object-position: center">
 				</div>
 				<div style="display: block; height: 100%; width: 100%; display: flex;justify-content: center; align-items: center; grid-row: 2; grid-column: 1;">
-					<img src="img/email-svgrepo-com.svg" alt="" style="object-fit: scale-down; height: 75%; width: 75%; object-position: center">
+					<img src="img/mail_logo.svg" alt="" style="object-fit: scale-down; height: 75%; width: 75%; object-position: center">
 				</div>
 				<p style="color: white; grid-row: 1; grid-column: 2; display: flex; align-items: center; margin: 0;"><a href="http://vk.com/id23735363" style="color: white; font-size: auto; display: block;">vk.com/id23735363 </p>
 				<p style="color: white; grid-row: 2; grid-column: 2; display: flex; align-items: center; margin: 0;"><a href="mailto: hrundeluk@mail.ru" style="color: white; font-size: auto; display: block; width: 100%">hrundeluk@mail.ru</a></p>
@@ -53,6 +53,9 @@
 			<div class="slider">
 					<img class="item" src="img/image_1.jpg">
 					<img class="item" src="img/image_2.jpg">
+					<img class="item" src="img/image_3.jpg">
+					<img class="item" src="img/image_4.jpg">
+					<img class="item" src="img/image_5.jpg">
 					<img class="item" src="img/image_6.jpg">
 					<img class="item" src="img/image_7.jpg">
 					<img class="item" src="img/image_8.jpg">
@@ -65,6 +68,31 @@
 		
 		<div class="content_element" id="otherOn">
 			<p class="menu_cutoff">Оставьте свой заказ</p>
+			<form style="color: white; border-color: white; border-style:solid; height: 60vh; width: 70vh; background-color: gray; border-radius: 2%; border-style: none; margin: auto;" id="request_call_form">
+				<p style="display: block; text-align: center; width: 100%;">Введите ваши данные</p>
+				<div class="input_field">
+					<label for="customer_name">Имя*: </label>
+					<input type="text" id="customer_name" class="mandatory">
+				</div>
+				<div class="input_field">
+					<label for="customer_surname">Фамилия: </label>
+					<input type="text" id="customer_surname">
+				</div>
+				<p style="display: block; text-align: center; width: 100%;">Введите телефон для связи</p>
+				<div class="input_field">
+					<label for="customer_phone">Тел* : </label>
+					<input type="text" id="customer_phone" class="mandatory">
+				</div>
+				<div style="width: 100%; display: flex; justify-content: center; height: 40px;">
+					<input type="button" class="button" id="submit_btn" value="Подтвердить" style="height: 100%; width: 30%;" onclick="VerifyAndSubmit()" >
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="modal" id="myModal" style="position: fixed; left: 0; top: 0; display: none; justify-content: center; align-items: center; width: 100vw; height: 100vh; z-index: 100; background-color: rgba(0,0,0,0.4);">
+		<div class="modal_content" style="width: 50%; height: 25%; background-color: white; z-index: 101; padding: 20px;">
+			<span class="close" onclick="CloseModal()">&times;</span>
+			<p id="modal_text">Nothing.</p>
 		</div>
 	</div>
 </body>
